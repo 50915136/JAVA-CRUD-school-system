@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scene1.StudentListController">
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="搜尋 : ">
+               <font>
+                  <Font name="DFKai-SB" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfstudentSearch" prefHeight="23.0" prefWidth="216.0" promptText="輸入學號或姓名">
+               <font>
+                  <Font name="DFKai-SB" size="18.0" />
+               </font>
+            </TextField>
+          <Button fx:id="btnstudentSearch" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="搜尋">
+               <font>
+                  <Font name="DFKai-SB" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <items>
+            <Label fx:id="lbstudentlistname" text="登入者: ">
+               <font>
+                  <Font name="DFKai-SB" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnstudentcc" mnemonicParsing="false" text="新增/修改">
+               <font>
+                  <Font name="DFKai-SB" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnstudentdelete" mnemonicParsing="false" text="刪除">
+               <font>
+                  <Font name="DFKai-SB" size="24.0" />
+               </font>
+            </Button>
+         </items>
+      </ToolBar>
+   </top>
+   <center>
+      <TableView fx:id="tvstudentlist" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="tcstudentid" minWidth="200.0" prefWidth="75.0" text="學號" />
+          <TableColumn fx:id="tcstudentname" minWidth="50.0" prefWidth="90.0" text="姓名" />
+            <TableColumn fx:id="tcstudentlistmow" prefWidth="50.0" text="性別" />
+            <TableColumn fx:id="tcstudentage" minWidth="116.0" prefWidth="225.0" text="年齡" />
+            <TableColumn fx:id="tcstudentstatus" minWidth="23.0" prefWidth="234.0" text="在學狀態" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>

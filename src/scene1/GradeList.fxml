@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scene1.GradeListController">
+   <center>
+      <TableView fx:id="tvgradelist" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="tcgradeid" minWidth="200.0" prefWidth="75.0" text="學號" />
+          <TableColumn fx:id="tcgradename" minWidth="200.0" prefWidth="75.0" text="姓名" />
+            <TableColumn fx:id="tagraderegular" prefWidth="90.0" text="平時成績(30%)" />
+            <TableColumn fx:id="tcgrademid" prefWidth="90.0" text="期中成績(30%)" />
+            <TableColumn fx:id="tcgradefin" prefWidth="90.0" text="期末成績(40%)" />
+            <TableColumn fx:id="tcgradesum" prefWidth="55.0" text="學期成績" />
+            <TableColumn fx:id="tcgradestatus" prefWidth="74.0" text="狀態" />
+        </columns>
+      </TableView>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="搜尋">
+               <font>
+                  <Font name="DFKai-SB" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfgradeinputname" prefHeight="45.0" prefWidth="300.0" promptText="輸入學號或姓名">
+               <font>
+                  <Font name="DFKai-SB" size="24.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btngradelistsearch" mnemonicParsing="false" text="搜尋" onAction="#loadGrades">
+               <font>
+                  <Font name="DFKai-SB" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lagradelistcourse" text="課程:">
+               <font>
+                  <Font name="DFKai-SB" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="btngradelistcc" mnemonicParsing="false" text="新增/修改" onAction="#openGradeEdit">
+               <font>
+                  <Font name="DFKai-SB" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="btngradelistdelete" mnemonicParsing="false" text="刪除" onAction="#deleteGrade">
+               <font>
+                  <Font name="DFKai-SB" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

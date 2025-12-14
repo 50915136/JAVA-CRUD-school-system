@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scene1.gradeQueryController">
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+            <Label fx:id="lagradeQueryname" text="登入者:">
+               <font>
+                  <Font name="DFKai-SB" size="24.0" />
+               </font>
+            </Label>
+        </items>
+      </ToolBar>
+   </top>
+   <center>
+      <TableView fx:id="gradeTable" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="tcgradeQueryid" prefWidth="160.0" text="課程代號" />
+          <TableColumn fx:id="tcgradeQueryname" prefWidth="160.0" text="課程名稱" />
+            <TableColumn fx:id="tcgradeQueryregular" prefWidth="95.0" text="平時成績(40%)" />
+            <TableColumn fx:id="tcgradeQuerymid" prefWidth="95.0" text="期中成績(30%)" />
+            <TableColumn fx:id="tcgradeQueryfin" prefWidth="95.0" text="期末成績(30%)" />
+            <TableColumn fx:id="tcgradeQuerytotal" prefWidth="95.0" text="學期成績" />
+            <TableColumn fx:id="tcgradeQuerystatus" prefWidth="100.0" text="狀態" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>
