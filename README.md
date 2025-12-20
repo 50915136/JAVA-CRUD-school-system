@@ -1,18 +1,18 @@
-## Getting Started
+## 使用須知
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+本系統為使用JAVA結合SQLite資料庫建立的校務管理系統
 
-## Folder Structure
+## 使用前要求
 
-The workspace contains two folders by default, where:
+將檔案已ZIP形式下載
+到 [here](https://www.oracle.com/tw/java/technologies/downloads/)
+安裝jdk-25_windows-x64_bin.exe
+到[here](https://gluonhq.com/products/javafx/x)
+安裝 openjfx-25.0.1_windows-x64_bin-sdk.rar並解壓縮到C槽
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## 目前缺陷
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management  The import javafx cannot be resolvedJava(268435846)
+尚未建立登出功能
+只有區分教師與學生身分
+無選課系統
  
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
