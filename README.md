@@ -5,9 +5,9 @@
 ## 使用前要求
 
 將檔案已ZIP形式下載\
-將到 [JDK下載網址JJ(https://www.oracle.com/tw/java/technologies/downloads/\
+將到 [JDK下載網址](https://www.oracle.com/tw/java/technologies/downloads/)\
 安裝jdk-25_windows-x64_bin.exe\
-安到[JAVAFX下載網址JJ(https://gluonhq.com/products/javafx/x\
+安到[JAVAFX下載網址](https://gluonhq.com/products/javafx/x)\
 安裝 openjfx-25.0.1_windows-x64_bin-sdk.rar並解壓縮到C槽  
   
 
